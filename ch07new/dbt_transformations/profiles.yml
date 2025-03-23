@@ -1,0 +1,8 @@
+dbt_transformations:
+  target: dev # this is the default target
+  outputs:
+    dev:
+      type: duckdb
+      path: '/tmp/atp.db'
+      schema: 'main'
+      threads: 4
